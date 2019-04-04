@@ -4,11 +4,11 @@ import styled, { keyframes, css } from "styled-components";
 
 const Fly = keyframes`
   0% {
-    top: 110%;
+    top: 110vh;
   }
 
   100% {
-    top: -10%;
+    top: -10vh;
   }
 `;
 
@@ -47,8 +47,8 @@ interface OuterContainerProps {
 
 const OuterContainer = styled.div<OuterContainerProps>`
   position: absolute;
-  top: 110%;
-  left: calc(50% - 50px);
+  top: 110vh;
+  left: calc(50vw - 50px);
   ${props => props.flying ? css`
     animation: ${Fly} ease-in infinite;
     animation-delay: ${props.delay || "0s"};
