@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "DaunPenh";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DaunPenh"), url("daunpenh.woff") format("woff"), url('daunpenh.ttf') format('truetype');
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "DaunPenh", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fbb;
+  color: #8E0012;
+}
+
+body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
