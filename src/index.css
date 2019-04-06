@@ -11,6 +11,7 @@ html {
   height: 100vh;
   width: 100vw;
   font-family: "DaunPenh", sans-serif;
+  font-size: 23px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fbb;
@@ -27,4 +28,9 @@ body, #root {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
