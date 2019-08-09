@@ -1,13 +1,14 @@
 import React from "react";
 import Person from "../Person";
-import * as util from "../util";
 import * as colors from "../colors";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Heart from "../components/Heart";
-import { Helmet } from "react-helmet";
+import Teddy from "../components/Teddy";
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -21,6 +22,8 @@ const Title = styled.div`
   font-weight: 600;
   white-space: nowrap;
 `;
+
+const TeddyContainer = styled.div``;
 
 interface Props {
   persons: Person[];
@@ -37,6 +40,10 @@ export default class Presentation extends React.Component<Props> {
         <Helmet title={`${title} - ❤ Love 💕`} />
 
         <Title>❤ {title} 💕</Title>
+
+        <TeddyContainer>
+          <Teddy />
+        </TeddyContainer>
 
         <Heart flying delay="6s" flyingSpeed="8s" xDisplacement="-48vw" color={colors.HEART[1]} size={0.5} />
         <Heart flying delay="4s" flyingSpeed="4s" xDisplacement="-25vw" color={colors.HEART[2]} size={0.5} />
